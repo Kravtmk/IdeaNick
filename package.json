@@ -1,8 +1,20 @@
 {
+  "name": "ideanick",
+  "private": true,
+  "version": "0.0.0",
+
   "devDependencies": {
     "prettier": "^3.5.3"
   },
   "scripts": {
     "prettify": "prettier --log-level warn --cache --write '{src/**/*,*}.{ts,tsx,js,json,yml,scss}' '!**/{node_modules,dist}/**/*'"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "esbuild"
+    ],
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
