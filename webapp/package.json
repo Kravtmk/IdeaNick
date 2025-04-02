@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "types": "tsc --noEmit --project ./tsconfig.json && tsc --noEmit --project ./tsconfig.node.json",
-    "prettify": "prettier --log-level warn --cache --write '{src/**/*,*}.{ts,tsx,js,json,yml,scss}' '!**/{node_modules,dist}/**/*'"
+    "prettify": "prettier --log-level warn --cache --write ."
   },
   "dependencies": {
     "@ideanick/backend": "workspace:*",
@@ -33,5 +33,4 @@
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
   }
-  
 }
