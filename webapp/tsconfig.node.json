@@ -9,6 +9,7 @@
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
+    "tsBuildInfoFile": "./node_modules/.cache/.node.tsbuildinfo",
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
