@@ -1,0 +1,8 @@
+{
+  "eslint.workingDirectories": ["backend", "webapp"],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}
