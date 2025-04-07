@@ -28,6 +28,11 @@ const ideas = [
   },
 ];
 
+const test = 42;
+if (test === 42) {
+  console.log("test");
+}
+
 const trpc = initTRPC.create();
 
 export const trpcRouter = trpc.router({
