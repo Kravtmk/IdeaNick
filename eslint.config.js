@@ -9,7 +9,7 @@ export default [
     languageOptions: {
       parser: tsParser,
       parserOptions: {
-        project: ["./backend/tsconfig.json", "./webapp/tsconfig.json"],
+        project: ["./backend/tsconfig.json", "./webapp/tsconfig.eslint.json"],
         tsconfigRootDir: process.cwd(),
       },
       ecmaVersion: "latest",
@@ -19,6 +19,8 @@ export default [
         module: "readonly",
         __dirname: "readonly",
         require: "readonly",
+        document: "readonly",
+        window: "readonly",
       },
     },
     plugins: {
