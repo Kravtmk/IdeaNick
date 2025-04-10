@@ -1,4 +1,5 @@
 import { TrpcProvider } from "./lib/trpc";
+import { Layout } from "./components/Layout";
 import { AllIdeasPage } from "./pages/AllIdeasPage";
 import { ViewIdeaPage } from "./pages/ViewIdeaPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -13,11 +14,13 @@ export const App = () => {
     <TrpcProvider>
       <BrowserRouter>
         <Routes>
-          <Route path={getAllIdeasRoute()} element={<AllIdeasPage />} />
-          <Route
-            path={getViewIdeaRoute(viewIdeaRouteParams)}
-            element={<ViewIdeaPage />}
-          />
+          <Route element={<Layout />}>
+            <Route path={getAllIdeasRoute()} element={<AllIdeasPage />} />
+            <Route
+              path={getViewIdeaRoute(viewIdeaRouteParams)}
+              element={<ViewIdeaPage />}
+            />
+          </Route>
         </Routes>
       </BrowserRouter>
     </TrpcProvider>
