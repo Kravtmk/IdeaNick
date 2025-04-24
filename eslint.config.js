@@ -21,6 +21,9 @@ export default [
         require: "readonly",
         document: "readonly",
         window: "readonly",
+        describe: "readonly",
+        it: "readonly",
+        expect: "readonly",
       },
     },
     plugins: {
