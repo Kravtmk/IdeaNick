@@ -1,5 +1,5 @@
-@import "../../node_modules/reset-css/sass/_reset";
-@import "./_vars";
+@import "../../node_modules/reset-css/sass/reset";
+@import "./vars";
 
 html,
 body,
@@ -9,6 +9,7 @@ body,
   width: 100%;
   position: relative;
 }
+
 body {
   font-family: $defaultFontFamily;
   font-size: $defaultFontSize;
@@ -22,6 +23,7 @@ body {
 *:after {
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
 }
