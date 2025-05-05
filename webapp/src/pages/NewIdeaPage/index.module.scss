@@ -1,0 +1,7 @@
+@use "../../styles/vendor/include-media" as *;
+@use "../../styles/vars";
+@use "../../styles/mixins";
+
+.submitButton {
+  width: 20%;
+}

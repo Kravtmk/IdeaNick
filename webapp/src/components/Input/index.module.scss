@@ -1,0 +1,26 @@
+@use "../../styles/vendor/include-media" as *;
+@use "../../styles/vars";
+@use "../../styles/mixins" as *;
+
+.inputWrapper {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 20%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

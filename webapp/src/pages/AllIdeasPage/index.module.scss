@@ -1,10 +1,11 @@
-@import "../../styles/vars";
-@import "../../styles/mixins";
+@use "../../styles/vendor/include-media" as *;
+@use "../../styles/vars";
+@use "../../styles/mixins";
 
 .ideas {
   .idea {
     padding: 20px;
-    border: 1px solid $black;
+    border: 1px solid vars.$black;
     border-radius: 10px;
 
     & + .idea {
@@ -12,7 +13,7 @@
     }
 
     .ideaLink {
-      @include link;
+      @include mixins.link;
     }
   }
 }
