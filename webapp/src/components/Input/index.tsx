@@ -13,6 +13,7 @@ export const Input = ({
 }) => {
   const value = formik.values[name];
   const error = formik.errors[name] as string | undefined;
+  const touched = formik.touched[name];
   return (
     <div className={styles.inputWrapper}>
       <label htmlFor={name} className={styles.label}>
@@ -28,7 +29,7 @@ export const Input = ({
         name={name}
         id={name}
       />
-      {error && <div style={{ color: "red" }}>{error}</div>}
+      {!!touched && !!error && <div style={{ color: "red" }}>{error}</div>}
     </div>
   );
 };
