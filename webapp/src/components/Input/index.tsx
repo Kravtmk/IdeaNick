@@ -12,6 +12,7 @@ export const Input = ({
   formik: FormikProps<undefined>;
 }) => {
   const value = formik.values[name];
+  const error = formik.errors[name] as string | undefined;
   return (
     <div className={styles.inputWrapper}>
       <label htmlFor={name} className={styles.label}>
@@ -27,6 +28,7 @@ export const Input = ({
         name={name}
         id={name}
       />
+      {error && <div style={{ color: "red" }}>{error}</div>}
     </div>
   );
 };
